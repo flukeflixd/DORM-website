@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #2ea1ee;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-button {
+    border: none;
+    cursor: pointer; 
+}
+
+.logo img {
+    height: 40px;
+    border-radius: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #51B4F6;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #FFC108;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.mid-main {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    padding: 10px; 
+    margin-top: 60px;
+}
+
+
+.mid {
+    border: 8px solid rgb(12, 11, 11);
+    border-radius: 20px;
+    height: auto; 
+    width: 100%; 
+    max-width: 200px; 
+    object-fit: cover; 
+}
+
+.text p{
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.picmain {
+    height: 600px;
+}
+
+
+
+footer {
+    background-color: #51B4F6;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .hero-content h1 {
+        font-size: 2rem; 
+    }
+
+    .hero-content p {
+        font-size: 1rem; 
+    }
+
+    .nav-links {
+        flex-direction: column; 
+        gap: 10px;
+        align-items: center; 
+    }
+
+    .mid-main {
+        grid-template-columns: 1fr; 
+    }
+
+    .mid {
+        max-width: 100%; 
+    }
+
+    .text p {
+        font-size: 1.5rem; 
+    }
+
+    .picmain {
+        height: auto; 
+    }
+}
